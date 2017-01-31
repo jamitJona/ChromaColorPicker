@@ -146,6 +146,10 @@ open class ChromaColorPicker: UIControl {
         self.updateHexLabel()
     }
     
+    open func customImageForAddButton(_ image: UIImage) {
+        self.addButton.setCustomImage(image)
+    }
+    
     //MARK: - Handle Touches
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
         //Overriden to prevent uicontrolevents being called from the super
