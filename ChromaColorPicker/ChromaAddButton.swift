@@ -43,7 +43,7 @@ open class ChromaAddButton: UIButton {
     open var circleLayer: CAShapeLayer?
     open var plusIconLayer: CAShapeLayer?
     open var customImageLayer: CALayer?
-    open var userContentMode: UIViewContentMode = .scaleAspectFit
+    open var userContentMode: UIView.ContentMode = .scaleAspectFit
     
     open var userImage: UIImage?
     
@@ -123,7 +123,7 @@ open class ChromaAddButton: UIButton {
         }
     }
     
-    open func setContentMode(contentMode: UIViewContentMode) {
+    open func setContentMode(contentMode: UIView.ContentMode) {
         self.userContentMode = contentMode
         self.setCustomImage(nil)
     }
